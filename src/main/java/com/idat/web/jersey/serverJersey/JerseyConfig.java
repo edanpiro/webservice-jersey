@@ -8,5 +8,6 @@ import org.springframework.stereotype.Component;
 public class JerseyConfig extends ResourceConfig {
     public JerseyConfig() {
         register(HelloWordController.class);
+        register(SecurityFilter.class);
     }
 }
